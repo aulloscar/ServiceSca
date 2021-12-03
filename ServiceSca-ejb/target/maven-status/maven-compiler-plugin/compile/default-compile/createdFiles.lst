@@ -1,8 +1,3 @@
-app\entreprise\expo\jms\EnvoiNotificationEncaissement.class
-app\entreprise\expo\jms\ReceptionConfirmationCommande.class
 app\entreprise\expo\jms\EnvoiNouvelleAffaire.class
 app\entreprise\NewSessionBean.class
-app\entreprise\expo\jms\EnvoiDemandeRdvPos.class
-app\entreprise\expo\jms\ReceptionConfirmationAchat.class
 app\entreprise\expo\jms\ReceptionConfirmationRdv.class
-app\entreprise\expo\jms\ReceptionConfirmationRdvPos.class

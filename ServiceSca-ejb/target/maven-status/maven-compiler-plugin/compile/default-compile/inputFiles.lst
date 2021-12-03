@@ -1,8 +1,11 @@
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\EnvoiNotificationEncaissement.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\ReceptionConfirmationCommande.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\EnvoiNouvelleAffaire.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\EnvoiDemandeRdvPos.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\ReceptionConfirmationAchat.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\NewSessionBean.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\ReceptionConfirmationRdv.java
-C:\Users\Josselin\Desktop\ProjetEAI\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\ReceptionConfirmationRdvPos.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\EnvoiAffaire.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\controllers\AffaireBean.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\controllers\AffaireBeanLocal.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\metier\AffaireBusinessLocal.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\ReceptionConfirmationRdv.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\NewSessionBean.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\services\ServicesAffaireLocal.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\expo\jms\EnvoiNouvelleAffaire.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\metier\AffaireBusiness.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\services\ServicesAffaire.java
+C:\Users\OscarAullo\Documents\Fac\M2\EAI\Projet\Projet Netbeans\ServiceSca\ServiceSca-ejb\src\main\java\app\entreprise\TestEnvoi.java
