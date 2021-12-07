@@ -35,7 +35,7 @@ public class AffaireBean implements AffaireBeanLocal {
     }
 
     @Override
-    public Affaire ajouterAffaire(Affaire a) throws AffaireExistanteException{
+    public Affaire ajouterAffaire(Affaire a)throws AffaireExistanteException{
         if (this.bdAffaire.lesaffaires.containsKey(a.getIdAffaire())) {
             throw new AffaireExistanteException();
         } else {

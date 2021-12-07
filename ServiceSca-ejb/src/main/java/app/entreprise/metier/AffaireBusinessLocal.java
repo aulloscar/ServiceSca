@@ -19,6 +19,7 @@ import app.entreprise.menuiserieshared.entities.Affaire;
 import app.entreprise.menuiserieshared.exceptions.AffaireExistanteException;
 import app.entreprise.menuiserieshared.exceptions.AffaireInconnueException;
 import java.util.Collection;
+import javax.ejb.EJB;
 import javax.ejb.Local;
 
 /**

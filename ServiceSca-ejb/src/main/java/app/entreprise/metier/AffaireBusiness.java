@@ -38,7 +38,7 @@ public class AffaireBusiness implements AffaireBusinessLocal {
     /**
      * EJB permettant la manipulation technique de la base
      */
-    @EJB
+    @EJB(beanName="AffaireBean")
     private AffaireBeanLocal affaireBean;
 
     /**
@@ -59,7 +59,7 @@ public class AffaireBusiness implements AffaireBusinessLocal {
      * @throws TitreIncorrectException Levée si le titre est mal formatté. Ex: Pas de mnemonique.
      */
     @Override
-    public Affaire ajouterAffaire(Affaire a) throws AffaireExistanteException {
+    public Affaire ajouterAffaire(Affaire a) throws AffaireExistanteException{
         // vérif mnemonique Titre
         if (Integer.toString(a.getIdAffaire()) == null) {
             System.out.println(" Erreur - Id non renseigné");

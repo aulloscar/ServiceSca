@@ -42,7 +42,7 @@ public interface ServicesAffaireLocal {
      * @throws TitreExistantException  Levée si le titre existe déjà en base
      * @throws TitreIncorrectException Levée si le titre est mal formatté. Ex: Pas de mnemonique.
      */
-    public String ajouterAffaire(String a) throws AffaireExistanteException;
+    public String ajouterAffaire(String a);
 
 
     /**

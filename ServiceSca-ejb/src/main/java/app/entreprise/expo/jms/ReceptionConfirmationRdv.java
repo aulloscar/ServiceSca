@@ -6,8 +6,6 @@
 package app.entreprise.expo.jms;
 
 import app.entreprise.menuiserieshared.entities.Affaire;
-import app.entreprise.menuiserieshared.entities.RdvCommercial;
-import app.entreprise.menuiserieshared.expo.jms.EnvoiAffaire;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import javax.jms.Message;

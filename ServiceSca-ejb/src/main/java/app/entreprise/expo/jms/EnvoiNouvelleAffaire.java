@@ -36,7 +36,7 @@ public class EnvoiNouvelleAffaire {
          * Alimentation d'une liste de titres
          */
         
-        Affaire affaire = new Affaire();
+        Affaire affaire = new Affaire(0,"Jean",null,null,null,null,null);
         affaire.setIdAffaire(0);
         affaire.setNomClient("Jean");
         
