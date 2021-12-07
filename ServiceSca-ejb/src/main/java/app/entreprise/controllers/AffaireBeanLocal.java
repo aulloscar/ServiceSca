@@ -18,7 +18,7 @@ import javax.ejb.Local;
 @Local
 public interface AffaireBeanLocal {
     
-    public Affaire ajouterAffaire(Affaire a) throws AffaireExistanteException;
+    public Affaire ajouterAffaire(Affaire a)throws AffaireExistanteException;
     
     public Affaire getAffaire(int idAffaire) throws AffaireInconnueException;
     

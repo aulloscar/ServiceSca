@@ -17,14 +17,10 @@ package app.entreprise.services;
 
 import app.entreprise.expo.jms.EnvoiAffaire;
 import app.entreprise.menuiserieshared.entities.Affaire;
-import app.entreprise.menuiserieshared.exceptions.AffaireExistanteException;
 import app.entreprise.menuiserieshared.exceptions.AffaireInconnueException;
 import app.entreprise.metier.AffaireBusinessLocal;
 import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
 import java.util.Collection;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
@@ -43,13 +39,12 @@ public class ServicesAffaire implements ServicesAffaireLocal {
     /**
      * EJB de Log dans JMS. Pour l'exemple...
      */
-    @EJB
-    private EnvoiAffaire envoiAffaire;
+    private EnvoiAffaire envoiAffaire = new EnvoiAffaire();
 
     /**
      * EJB métier de la bourse
      */
-    @EJB
+    @EJB(beanName="AffaireBusiness")
     private AffaireBusinessLocal affaireBusiness;
     /**
      * Convertisseur Objet JSON et inversement)
@@ -74,20 +69,23 @@ public class ServicesAffaire implements ServicesAffaireLocal {
      * @throws TitreIncorrectException Levée si le titre est mal formatté. Ex: Pas de mnemonique.
      */
     @Override
-    public String ajouterAffaire(String a) throws AffaireExistanteException {
+    public String ajouterAffaire(String a) {
         try {
             System.out.println(a);
             Affaire affaire = this.gson.fromJson(a, Affaire.class);
             // titrevalide permet de positionner correctement la date de prise en compte de la cotation
             Affaire affairevalide = new Affaire(affaire.getIdAffaire(), affaire.getNomClient(), affaire.getPrenomClient(), affaire.getAdressePostale(), affaire.getMail(), affaire.getTelephone(), affaire.getAdresseLivraison());
-
+            
+            System.out.println(affairevalide);
+            
             // Envoi vers le service commercial
             this.envoiAffaire.send(affairevalide, "NouvelleAffaireFile");
+            
+            System.out.println("Ici !");
 
             return this.gson.toJson(this.affaireBusiness.ajouterAffaire(affairevalide));
-        } catch (JsonSyntaxException e) {
-            System.out.println("Erreur - Ajout de l'affaire à échoué");
-            return("Erreur - Ajout de l'affaire à échoué");
+        } catch (Exception ex) {
+            return("j'y crois à mort");
         }
     }
 
